@@ -1,0 +1,340 @@
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font-size: 20px;
+  overflow-x: hidden;
+  box-sizing: border-box;
+}
+
+#main-header {
+  height: 100px;
+  border-bottom: 10px solid #37c1ce;
+}
+
+.container-fluid {
+  margin: 0px;
+  padding: 0px;
+}
+
+#logo {
+  max-height: 90px;
+  max-width: 250px;
+  vertical-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#navbar {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+#navbar li{
+  display: inline-block;
+  margin-right: 10px;
+  padding: 5px;
+}
+
+#navbar li:hover {
+  background-color: rgba(55,193,206,0.3);
+  cursor: pointer;
+  color: black;
+}
+
+#navbar a:hover {
+  color: black;
+}
+
+#slide-show {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#slide-show img {
+  width: 100%;
+  height: 550px;
+}
+
+.carousel-contol {
+  background-color: black;
+  width: 30px;
+}
+
+#about-us {
+  margin-top: 50px;
+}
+
+#about-us-article {
+  margin-left: 50px;
+  width: 70%;
+}
+
+#our-impact {
+  background: url("imgs/slideshow/img7.jpg");
+  background-size: cover;
+  background-position: start;
+  width: 100vw;
+}
+
+#our-impact .white-wrapper {
+  padding-left: 50px;
+  height: 80vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#our-impact header {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.impact-card {
+  padding: 0;
+  min-height: 300px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+  padding-right: 30px;
+
+  font-weight: 500;
+
+  background-color: rgba(55,193,206,0.2);
+  border-radius: 25px;
+}
+
+#projects {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.project-card {
+  padding: 20px;
+  height: 450px;
+
+  overflow: hidden;
+}
+
+.project-card p {
+  font-size: 20px;
+}
+
+#founder {
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#founder .photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#founder .photo img {
+  width: 300px;
+  height: 300px;
+  border-radius: 200px;
+  border: 10px solid rgb(55,193,206);
+}
+
+#founder ul{
+  margin-left: 25px;
+  list-style-type: disc;
+}
+
+#awards {
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+#awards .jumbotron {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+#awards .txt-wrapper {
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(55,193,206,0.5);
+}
+
+#award-1 {
+  background-image: url('imgs/awardsphotos_/FB_IMG_1536083593735.jpg');
+}
+
+#award-2 {
+  background-image: url('imgs/awardsphotos_/9.jpg');
+}
+
+#award-3 {
+  background-image: url('imgs/awardsphotos_/11.jpg');
+}
+
+#award-4 {
+  background-image: url('imgs/awardsphotos_/12.jpg');
+}
+
+#award-5 {
+  background-image: url('imgs/awardsphotos_/13.jpg');
+}
+
+#award-6 {
+  background-image: url('imgs/awardsphotos_/14.jpg');
+}
+
+#award-7 {
+  background-image: url('imgs/awardsphotos_/18.jpg');
+}
+
+#award-8 {
+  background-image: url('imgs/awardsphotos_/22.jpg');
+}
+
+#award-9 {
+  background-image: url('imgs/awardsphotos_/23.jpg');
+}
+
+#award-10 {
+  background-image: url('imgs/awardsphotos_/FB_IMG_1536083601581.jpg');
+}
+
+#award-11 {
+  background-image: url('imgs/awardsphotos_/Gaan\ Rathna.jpg')
+}
+
+#media-center {
+  margin-left: 50px;
+  margin-top: 40px;
+  margin-right: 50px;
+}
+
+#media-center a {
+  text-decoration: none;
+  color: inherit;
+
+  position: absolute;;
+  bottom: 50px;
+
+  padding: 5px;
+  background-color: rgb(55,193,206);
+}
+
+#media-center a:hover {
+  background-color: rgb(152, 232, 240);
+}
+
+#media-center .jumbotron {
+  padding: 20px;
+  height: 300px;
+  overflow: hidden;
+}
+
+#contact-us {
+  background-image: url('imgs/communication-contact-conversation-33999.jpg');
+  background-size: cover;
+  background-position: center;
+  
+  padding: 50px;
+}
+
+#form-wrapper {
+  display: block;
+  width: 50%;
+  margin-left: 40%;
+}
+
+#form-wrapper textarea {
+  height: 230px; width: 100%; vertical-align: text-top;
+}
+
+#footer {
+  padding: 10px;
+  text-align: center;
+  background-color: black;
+  color: rgb(192, 192, 192);
+}
+
+#footer a {
+  color: rgba(255, 255, 255, 0.5); 
+}
+
+.article {
+  margin-top: 30px;
+}
+
+.bg-txt-1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.white-wrapper {
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.bg-txt-2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+::-webkit-scrollbar {
+  background: rgba(99, 99, 99, 0.1);
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(55,193,206, 0.5);
+  border-radius: 1ex;
+  box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.75);
+  
+}
+
+::-webkit-scrollbar-corner {
+  background: #000;
+}
+
+@media only screen and (max-width: 1207px) {
+  #main-header {
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 991px) {
+  .project-card {
+    height: 350px;
+  }
+}
+
+@media only screen and (max-width: 664px) {
+  #main-header {
+    height: 310px;
+  }
+
+  #contact-us {
+    background-position: left;
+  }
+
+  #form-wrapper {
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
