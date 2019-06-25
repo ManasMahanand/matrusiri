@@ -26,13 +26,6 @@ html, body {
   max-width: 250px;
 }
 
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-
 #navbar {
   display: inline-block;
   text-align: center;
@@ -141,22 +134,19 @@ html, body {
   margin-top: 50px;
 }
 
-#founder .photo {
+#profile-pic {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-#founder .photo img {
-  width: 300px;
+  overflow: hidden;
   height: 300px;
-  border-radius: 200px;
+  width: 300px;
   border: 10px solid rgb(55,193,206);
-}
-
-#founder ul{
-  margin-left: 25px;
-  list-style-type: disc;
+  border-radius: 200px;
+  background-image: url('imgs/profile.jpg');
+  background-position-y: -50px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 #contact-us {
@@ -193,23 +183,30 @@ html, body {
   margin-top: 30px;
 }
 
-.bg-txt-1 {
-  font-size: 40px;
-  font-weight: 500;
-}
-
 a {
   text-decoration: none;
   color: inherit;
 }
 
-.white-wrapper {
-  background-color: rgba(255, 255, 255, 0.25);
+.bg-txt-1 {
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .bg-txt-2 {
   font-size: 30px;
   font-weight: 500;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.white-wrapper {
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
 ::-webkit-scrollbar {
@@ -228,23 +225,19 @@ a {
   background: #000;
 }
 
-@media only screen and (max-width: 1207px) {
-  #main-header {
-    height: 150px;
-  }
-}
-
 @media only screen and (max-width: 991px) {
   .project-card {
     height: 350px;
   }
 }
 
-@media only screen and (max-width: 664px) {
+@media only screen and (max-width: 908px) {
   #main-header {
-    height: 310px;
+    height: 150px;
   }
+}
 
+@media only screen and (max-width: 664px) {
   #contact-us {
     background-position: left;
   }
@@ -254,5 +247,11 @@ a {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  #main-header {
+    height: 250px;
   }
 }
