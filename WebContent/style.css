@@ -16,10 +16,14 @@ html, body {
   padding: 0px;
 }
 
-#logo {
+#logo-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   max-height: 90px;
   max-width: 250px;
-  vertical-align: center;
 }
 
 .center {
@@ -133,6 +137,7 @@ html, body {
 
 #founder {
   margin-left: 50px;
+  margin-right: 50px;
   margin-top: 50px;
 }
 
@@ -154,99 +159,12 @@ html, body {
   list-style-type: disc;
 }
 
-#awards {
-  margin-left: 50px;
-  margin-top: 40px;
-  margin-right: 50px;
-}
-
-#awards .jumbotron {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-#awards .txt-wrapper {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(55,193,206,0.5);
-}
-
-#award-1 {
-  background-image: url('imgs/awardsphotos_/FB_IMG_1536083593735.jpg');
-}
-
-#award-2 {
-  background-image: url('imgs/awardsphotos_/9.jpg');
-}
-
-#award-3 {
-  background-image: url('imgs/awardsphotos_/11.jpg');
-}
-
-#award-4 {
-  background-image: url('imgs/awardsphotos_/12.jpg');
-}
-
-#award-5 {
-  background-image: url('imgs/awardsphotos_/13.jpg');
-}
-
-#award-6 {
-  background-image: url('imgs/awardsphotos_/14.jpg');
-}
-
-#award-7 {
-  background-image: url('imgs/awardsphotos_/18.jpg');
-}
-
-#award-8 {
-  background-image: url('imgs/awardsphotos_/22.jpg');
-}
-
-#award-9 {
-  background-image: url('imgs/awardsphotos_/23.jpg');
-}
-
-#award-10 {
-  background-image: url('imgs/awardsphotos_/FB_IMG_1536083601581.jpg');
-}
-
-#award-11 {
-  background-image: url('imgs/awardsphotos_/Gaan\ Rathna.jpg')
-}
-
-#media-center {
-  margin-left: 50px;
-  margin-top: 40px;
-  margin-right: 50px;
-}
-
-#media-center a {
-  text-decoration: none;
-  color: inherit;
-
-  position: absolute;;
-  bottom: 50px;
-
-  padding: 5px;
-  background-color: rgb(55,193,206);
-}
-
-#media-center a:hover {
-  background-color: rgb(152, 232, 240);
-}
-
-#media-center .jumbotron {
-  padding: 20px;
-  height: 300px;
-  overflow: hidden;
-}
-
 #contact-us {
   background-image: url('imgs/communication-contact-conversation-33999.jpg');
   background-size: cover;
   background-position: center;
   
+  margin-top: 50px;
   padding: 50px;
 }
 
