@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html,
 body {
   margin: 0px;
   padding: 0px;
   font-size: 20px;
+  font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
   box-sizing: border-box;
 }
@@ -165,61 +168,86 @@ body {
 
 #awards {
   margin-top: 40px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
-#awards .jumbotron {
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+#awards .award {
+  position: relative;
+  background: #ffbc00;
+  overflow: hidden;
 }
 
-#awards .txt-wrapper {
-  border-radius: 10px;
-  padding: 10px;
-  background-color: rgba(55, 193, 206, 0.5);
+#awards .award::after {
+  content: '';
+  position: absolute;
+  display: block;
+  background: inherit;
+  opacity: 0.9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(2) translateX(-75%) translateY(-75%) rotate(-28deg);
+  transition: transform 3s cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-#award-1 {
-  background-image: url('imgs/awardsphotos_/FB_IMG_1536083593735.jpg');
+#awards .award:hover::after {
+  transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
 }
 
-#award-2 {
-  background-image: url('imgs/awardsphotos_/9.jpg');
+#awards .award:hover .award-image {
+  transform: scale(1.2);
 }
 
-#award-3 {
-  background-image: url('imgs/awardsphotos_/11.jpg');
+#awards .award:hover .award-text {
+  opacity: 1;
+  transform: translateY(0);
 }
 
-#award-4 {
-  background-image: url('imgs/awardsphotos_/12.jpg');
+#awards .award .award-image {
+  height: auto;
+  transform: translateZ(0);
+  display: block;
+  transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
 }
 
-#award-5 {
-  background-image: url('imgs/awardsphotos_/13.jpg');
+#awards .award .award-image::before {
+  content: '';
+  display: block;
+  padding-top: 75%;
+  overflow: hidden;
 }
 
-#award-6 {
-  background-image: url('imgs/awardsphotos_/14.jpg');
+#awards .award .award-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  line-height: 0;
 }
 
-#award-7 {
-  background-image: url('imgs/awardsphotos_/18.jpg');
+#awards .award .award-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+  transform: translate(-20%);
+  transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
+    transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
+  transition-delay: 300ms;
 }
 
-#award-8 {
-  background-image: url('imgs/awardsphotos_/22.jpg');
-}
-
-#award-9 {
-  background-image: url('imgs/awardsphotos_/23.jpg');
-}
-
-#award-10 {
-  background-image: url('imgs/awardsphotos_/FB_IMG_1536083601581.jpg');
-}
-
-#award-11 {
-  background-image: url('imgs/awardsphotos_/Gaan\ Rathna.jpg');
+#awards .award .txt-wrapper {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #media-center {
