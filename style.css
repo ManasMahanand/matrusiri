@@ -1,9 +1,14 @@
-html, body {
+html,
+body {
   margin: 0px;
   padding: 0px;
   font-size: 20px;
   overflow-x: hidden;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 1500px;
 }
 
 #main-header {
@@ -36,14 +41,14 @@ html, body {
   margin-top: 50px;
 }
 
-#navbar li{
+#navbar li {
   display: inline-block;
   margin-right: 10px;
   padding: 5px;
 }
 
 #navbar li:hover {
-  background-color: rgba(55,193,206,0.3);
+  background-color: rgba(55, 193, 206, 0.3);
   cursor: pointer;
   color: black;
 }
@@ -53,7 +58,7 @@ html, body {
 }
 
 #slide-show {
-  width: 80%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -70,27 +75,30 @@ html, body {
 
 #about-us {
   margin-top: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-#about-us-article {
-  margin-left: 50px;
-  width: 70%;
+#about-us #video-wrapper iframe {
+  width: 100%;
+  height: 17rem;
 }
 
 #our-impact {
-  background: url("imgs/slideshow/img7.jpg");
+  background: url('imgs/slideshow/img7.jpg');
   background-size: cover;
   background-position: start;
   width: 100vw;
 }
 
 #our-impact .white-wrapper {
-  padding-left: 50px;
   height: 80vh;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-right: 20px;
 }
 
 #our-impact header {
@@ -110,7 +118,7 @@ html, body {
 
   font-weight: 500;
 
-  background-color: rgba(55,193,206,0.2);
+  background-color: rgba(55, 193, 206, 0.2);
   border-radius: 25px;
 }
 
@@ -132,7 +140,6 @@ html, body {
 }
 
 #founder {
-  margin-left: 50px;
   margin-top: 50px;
 }
 
@@ -143,21 +150,21 @@ html, body {
 }
 
 #founder .photo img {
+  margin-left: auto;
+  margin-right: auto;
   width: 300px;
   height: 300px;
   border-radius: 200px;
-  border: 10px solid rgb(55,193,206);
+  border: 10px solid rgb(55, 193, 206);
 }
 
-#founder ul{
+#founder ul {
   margin-left: 25px;
   list-style-type: disc;
 }
 
 #awards {
-  margin-left: 50px;
   margin-top: 40px;
-  margin-right: 50px;
 }
 
 #awards .jumbotron {
@@ -168,7 +175,7 @@ html, body {
 #awards .txt-wrapper {
   border-radius: 10px;
   padding: 10px;
-  background-color: rgba(55,193,206,0.5);
+  background-color: rgba(55, 193, 206, 0.5);
 }
 
 #award-1 {
@@ -212,7 +219,7 @@ html, body {
 }
 
 #award-11 {
-  background-image: url('imgs/awardsphotos_/Gaan\ Rathna.jpg')
+  background-image: url('imgs/awardsphotos_/Gaan\ Rathna.jpg');
 }
 
 #media-center {
@@ -225,11 +232,11 @@ html, body {
   text-decoration: none;
   color: inherit;
 
-  position: absolute;;
+  position: absolute;
   bottom: 50px;
 
   padding: 5px;
-  background-color: rgb(55,193,206);
+  background-color: rgb(55, 193, 206);
 }
 
 #media-center a:hover {
@@ -246,7 +253,7 @@ html, body {
   background-image: url('imgs/communication-contact-conversation-33999.jpg');
   background-size: cover;
   background-position: center;
-  
+
   padding: 50px;
 }
 
@@ -257,7 +264,9 @@ html, body {
 }
 
 #form-wrapper textarea {
-  height: 230px; width: 100%; vertical-align: text-top;
+  height: 230px;
+  width: 100%;
+  vertical-align: text-top;
 }
 
 #footer {
@@ -268,7 +277,7 @@ html, body {
 }
 
 #footer a {
-  color: rgba(255, 255, 255, 0.5); 
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .article {
@@ -290,7 +299,7 @@ a {
 }
 
 .bg-txt-2 {
-  font-size: 30px;
+  font-size: 25px;
   font-weight: 500;
 }
 
@@ -300,10 +309,9 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgba(55,193,206, 0.5);
+  background-color: rgba(55, 193, 206, 0.5);
   border-radius: 1ex;
   box-shadow: 5px 10px 7px rgba(0, 0, 0, 0.75);
-  
 }
 
 ::-webkit-scrollbar-corner {
@@ -317,6 +325,17 @@ a {
 }
 
 @media only screen and (max-width: 991px) {
+  #our-impact {
+    background: #ccc;
+  }
+
+  #our-impact .white-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
   .project-card {
     height: 350px;
   }
