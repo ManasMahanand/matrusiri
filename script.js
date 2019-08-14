@@ -1,16 +1,16 @@
-// Activate Carousel
-$("#myCarousel").carousel();
+// // Activate Carousel
+// $('#myCarousel').carousel();
 
-// Enable Carousel Indicators
-$(".item").click(function(){
-  $("#myCarousel").carousel(1);
-});
+// // Enable Carousel Indicators
+// $('.item').click(function() {
+//   $('#myCarousel').carousel(1);
+// });
 
-// Enable Carousel Controls
-$(".carousel-control-prev").click(function(){
-  $("#myCarousel").carousel("prev");
-});
+// // Enable Carousel Controls
+// $('.carousel-control-prev').click(function() {
+//   $('#myCarousel').carousel('prev');
+// });
 
-$('#myCarousel').carousel({
-  interval: 1000
-});
+// $('#myCarousel').carousel({
+//   interval: 1000
+// });

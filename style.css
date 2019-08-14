@@ -17,6 +17,14 @@ body {
 #main-header {
   height: 100px;
   border-bottom: 10px solid #37c1ce;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  z-index: 4;
+}
+
+#main-header a {
+  z-index: 5;
 }
 
 .container-fluid {
@@ -60,20 +68,27 @@ body {
   color: black;
 }
 
+#home {
+  padding-top: 100px;
+}
+
 #slide-show {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
+  z-index: 0;
 }
 
 #slide-show img {
   width: 100%;
   height: auto;
+  z-index: 0;
 }
 
 .carousel-control {
   background-color: black;
   width: 30px;
+  z-index: 0;
 }
 
 #about-us {
@@ -256,21 +271,6 @@ body {
   margin-right: 50px;
 }
 
-#media-center a {
-  text-decoration: none;
-  color: inherit;
-
-  position: absolute;
-  bottom: 50px;
-
-  padding: 5px;
-  background-color: rgb(55, 193, 206);
-}
-
-#media-center a:hover {
-  background-color: rgb(152, 232, 240);
-}
-
 #media-center .jumbotron {
   padding: 20px;
   height: 300px;
@@ -302,6 +302,7 @@ body {
   text-align: center;
   background-color: black;
   color: rgb(192, 192, 192);
+  width: 100%;
 }
 
 #footer a {
@@ -322,13 +323,33 @@ a {
   color: inherit;
 }
 
+a:hover {
+  text-decoration: none;
+}
+
 .white-wrapper {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
 .bg-txt-2 {
-  font-size: 25px;
+  font-size: 1.5rem;
   font-weight: 500;
+  padding-bottom: 1rem;
+}
+
+.btn-primary {
+  text-decoration: none;
+  color: inherit;
+
+  position: absolute;
+  bottom: 50px;
+
+  padding: 5px;
+  background-color: rgb(55, 193, 206);
+}
+
+.btn-primary:hover {
+  background-color: rgb(152, 232, 240);
 }
 
 ::-webkit-scrollbar {
@@ -349,6 +370,10 @@ a {
 @media only screen and (max-width: 1207px) {
   #main-header {
     height: 150px;
+  }
+
+  #home {
+    padding-top: 150px;
   }
 }
 
@@ -372,6 +397,9 @@ a {
 @media only screen and (max-width: 664px) {
   #main-header {
     height: 310px;
+  }
+  #home {
+    padding-top: 310px;
   }
 
   #contact-us {
