@@ -337,12 +337,14 @@ a:hover {
   padding-bottom: 1rem;
 }
 
+.btn-end {
+  position: absolute;
+  bottom: 50px;
+}
+
 .btn-primary {
   text-decoration: none;
   color: inherit;
-
-  position: absolute;
-  bottom: 50px;
 
   padding: 5px;
   background-color: rgb(55, 193, 206);
